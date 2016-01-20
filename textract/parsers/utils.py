@@ -1,6 +1,11 @@
 """This module includes a bunch of convenient base classes that are
 reused in many of the other parser modules.
 """
+from __future__ import unicode_literals
+import sys
+
+if sys.version_info > (3,):
+    unicode = str
 
 import subprocess
 import tempfile
